@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/card_selector"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/ic_music_note_black_24dp"
+            android:contentDescription="@string/img_desc_image" />
+
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_below="@id/imageView6"
+            tools:text="song name"
+            style="@style/menu_text_style"/>
+
+
+        <TextView
+            android:id="@+id/tv_artist_name"
+            android:layout_below="@id/tv_song_name"
+            tools:text="10 tracks"
+            style="@style/menu_text_style"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
